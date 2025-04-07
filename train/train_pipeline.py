@@ -11,7 +11,7 @@ from utils.evaluation import evaluate_model
 from train.augmentations import generate_augmented_views
 import torch_geometric.data as data
 
-def load_mock_dataset(cfg):
+def load_dataset(cfg):
     """Generate a mock dataset for testing"""
     num_nodes = cfg['data']['num_nodes']
     num_edges = cfg['data']['num_edges']
@@ -85,7 +85,7 @@ def train(cfg):
     print(f"Using device: {device}")
     
     # Load data
-    train_data, val_data, test_data = load_mock_dataset(cfg)
+    train_data, val_data, test_data = load_dataset(cfg)
     
     # Create data loaders
     train_loader = DataLoader([train_data], batch_size=1, shuffle=True)
