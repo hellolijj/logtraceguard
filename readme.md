@@ -1,4 +1,4 @@
-# LogTraceGuard
+# LogTraceGuard: A Log-aware Trace Graph Contrastive Learning Framework for Anomaly Detection in Microservice Systems
 
 **LogTraceGuard** is a log-aware trace graph contrastive learning framework for anomaly detection in microservice systems. It combines multi-granularity contrastive learning, graph neural networks, and PU learning to detect root causes of system failures using logs, metrics, and trace structures.
 
