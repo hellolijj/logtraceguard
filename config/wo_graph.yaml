@@ -1,0 +1,27 @@
+model:
+  input_dim: 128
+  node_dim: 64
+  edge_input_dim: 32
+  edge_dim: 32
+  gnn_layers: 2
+
+loss_weights:
+  contrastive_graph: 0.0
+  contrastive_node: 0.5
+  contrastive_edge: 0.5
+  pu: 1.0
+
+contrastive:
+  temperature: 0.5
+  use_node: true
+  use_edge: true
+
+pu:
+  hidden: 64
+  prior: 0.3
+
+augment:
+  drop_prob: 0.2
+  strategy: "structure-aware"
+
+epochs: 50

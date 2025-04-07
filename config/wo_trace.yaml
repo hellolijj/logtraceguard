@@ -1,0 +1,13 @@
+contrastive:
+  use_node: true
+  use_edge: true
+
+loss_weights:
+  contrastive_graph: 1.0
+  contrastive_node: 0.5
+  contrastive_edge: 0.5
+  pu: 1.0
+
+input:
+  use_logs: true
+  use_traces: false

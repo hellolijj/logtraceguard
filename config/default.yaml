@@ -1,0 +1,24 @@
+data:
+  num_nodes: 100
+  num_edges: 200
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+model:
+  node_dim: 32
+  edge_dim: 16
+  hidden_dim: 64
+  num_layers: 2
+  dropout: 0.1
+
+training:
+  lr: 0.001
+  num_epochs: 50
+  eval_interval: 5
+  patience: 5
+  min_delta: 0.0
+
+augmentation:
+  feature_drop_prob: 0.1
+  edge_drop_prob: 0.1
