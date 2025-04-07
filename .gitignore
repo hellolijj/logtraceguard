@@ -1,0 +1,30 @@
+# === Python artifacts ===
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints/
+
+# === Virtual env ===
+.env/
+.venv/
+env/
+venv/
+*.egg-info/
+
+# === PyTorch files ===
+*.pt
+*.pth
+checkpoints/
+runs/              # TensorBoard logs
+logs/
+*.log
+
+# === Data & results ===
+datasets
+baselines
+logtraceguard.zip
+pic
